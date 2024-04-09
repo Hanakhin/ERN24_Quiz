@@ -59,6 +59,8 @@ const nbrQuestions = questions.length;
  
 //function pour afficher la question actuelle et receuillir la réponse
 function afficherQuestion() {
+
+  
   // Obtenir et supprimer la première question du tableau
   const currentQuestion = questions.shift();
   // Sélection de l'élément avec l'ID "card"
@@ -80,17 +82,19 @@ function afficherQuestion() {
  
     const label = document.createElement('label');
     label.textContent = option;
- 
+    const span = document.createElement('span')
     // Ajout des éléments input et label au formulaire
-    form.appendChild(input);
-    form.appendChild(label);
+    form.appendChild(span)
+    span.appendChild(input);
+    span.appendChild(label);
+
   });
  
   // Création du bouton de validation
   const submitButton = document.createElement('input');
   submitButton.type = 'submit';
   submitButton.value = 'Valider';
- 
+  
   // Ajout du bouton de validation au formulaire
   form.appendChild(submitButton);
  
@@ -125,6 +129,7 @@ function afficherQuestion() {
     }
   });
 }
+
 //fonction pour gérer la fin de partie
 function finDePartie() {
   alert(`Fin de partie! Votre score est de ${score}/${nbrQuestions}`);

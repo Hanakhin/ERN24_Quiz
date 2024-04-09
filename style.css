@@ -1,0 +1,90 @@
+*{
+    font-family: "Tilt Neon", sans-serif;
+    font-weight: 200;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+p{
+    text-align: justify;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: 50vh;
+    justify-content: start;
+    align-items: center;
+    background-color: #222;
+    border-radius: 8px;
+    row-gap: 22px;
+}
+.title{
+    font-size: 32px;
+    color: #f1f1f1;
+}
+button{
+    padding: 12px;
+    border-radius: 4px;
+    border: 2px solid #222;
+    transition: 0.1s ease-out;
+    font-size: 18px;
+}
+button:hover{
+    color: #32cd32;
+    background-color: #222;
+    cursor: pointer;
+    border: 2px solid #32cd32;
+}
+.btn-container{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 18px;
+    padding: 22px;
+    row-gap: 10px;
+}
+
+input{
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 2px solid #222;
+    transition: 0.1s ease-out;
+    font-size: 18px;
+    align-self: center;
+}
+
+input:hover{
+    color: #32cd32;
+    background-color: #222;
+    cursor: pointer;
+    border: 2px solid #32cd32;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: start;
+    row-gap: 8px;
+    accent-color: #32cd32;
+}
+
